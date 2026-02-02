@@ -9,16 +9,14 @@ Service A (client) – service-a (cổng 3000)
 Khởi động nhanh (Windows)
 1. Mở hai cửa sổ terminal
 2. Khởi động Service B
-cd "d:\Study area\practice here\KTVPTPM\FaultTolerance\service-b"
-npm install
+cd service-b
 npm start
 
-3. Khởi động Service A
-cd "d:\Study area\practice here\KTVPTPM\FaultTolerance\service-a"
-npm install
+4. Khởi động Service A
+cd service-a
 npm start
 
-4. Gọi Service A để kích hoạt việc gọi Service B
+5. Gọi Service A để kích hoạt việc gọi Service B
 
 Trong trình duyệt hoặc dùng curl:
 
