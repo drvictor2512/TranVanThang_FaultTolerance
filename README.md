@@ -6,23 +6,10 @@ Service B (downstream) – service-b (cổng 3001)
 Service A (client) – service-a (cổng 3000)
 — gọi Service B và áp dụng các chính sách phía client như: retry, circuit breaker, rate limiter, bulkhead.
 
-Khởi động nhanh (Windows)
-1. Mở hai cửa sổ terminal
-2. Khởi động Service B
-cd service-b
-npm start
-
-4. Khởi động Service A
-cd service-a
-npm start
-
-5. Gọi Service A để kích hoạt việc gọi Service B
-
-Trong trình duyệt hoặc dùng curl:
+Trong postman hoặc dùng curl:
 
 # kích hoạt 5 lần gọi
 curl "http://localhost:3000/call?count=5"
-
 
 Sẽ thấy response và log hiển thị:
 
